@@ -40,7 +40,7 @@ labelRecovered.pack()
 # Update Info Button 
 btnFrame = Frame(root, bg = "white")
 btnFrame.pack()
-ButtonUpdate = Button(btnFrame, text = "Update", padx = 5, font = ("Arial", 20), bg = "#58B61C", fg = "white", bd = 0, cursor="hand2", command= lambda: Scrapper.UpdateCovid19Info(TextCases, TextDeaths, TextRecovered))
+ButtonUpdate = Button(btnFrame, text = "Update", padx = 5, font = ("Arial", 20), bg = "#58B61C", fg = "white", bd = 0, cursor="hand2", command= lambda: Scrapper.updateCovid19Info(TextCases, TextDeaths, TextRecovered))
 ButtonUpdate.pack(pady = (30,5))
 
 Scrapper.UpdateCovid19Info(TextCases, TextDeaths, TextRecovered)
